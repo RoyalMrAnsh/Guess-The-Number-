@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-image: url("backgroundimg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav ul {
+
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+.nav ul li {
+    list-style: none;
+    color: rgb(243, 238, 238);
+    cursor: pointer;
+    padding-right: 5px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.navlast {
+    padding-right: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google {
+    mask-image: url(google_logo.svg);
+    forced-color-adjust: none;
+    width: 280px;
+    height: 100px;
+    mask-repeat: no-repeat;
+    background-color: rgb(240, 236, 236);
+    margin-top: 65px;
+
+
+}
+.google mask-image{
+    height: 20vh;
+}
+
+.search {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+
+}
+
+.search input {
+    width: 700px;
+    height: 5vh;
+    border-radius: 101px;
+    border: 1px whitesmoke;
+    font-size: large;
+    padding-left: 30px;
+    color: solid rgb(36, 35, 35);
+    font-weight: 100;
+    
+
+
+}
+
+@media screen and (orientation: portrait) {
+    .search input {
+        width: 95vw;
+        height: 5vh;
+        border-radius: 101px;
+        border: 1px whitesmoke;
+        font-size: medium;
+        padding-left: 10px;
+        color: solid rgb(36, 35, 35);
+        font-weight: 100;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .google {
+        mask-image: url(google_logo.svg);
+        forced-color-adjust: none;
+       
+        height: 15vh;
+        align-items: center;
+        mask-repeat: no-repeat;
+        background-color: rgb(240, 236, 236);
+        margin-top: 65px;
+
+    }
+
+}
